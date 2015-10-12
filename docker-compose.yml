@@ -8,5 +8,5 @@ web:
   volumes:
     - ./sites:/sites:ro
     - ./sites-available:/etc/nginx/sites-enabled:ro
-    - ./log:/var/log
+    - ./log:/var/log/nginx
   command: nginx
