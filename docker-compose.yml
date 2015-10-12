@@ -6,7 +6,7 @@ web:
   external_links:
     - dockernoderuntime_nodeapp_1:nodeapp
   volumes:
-    - ./html:/sites:ro
+    - ./sites:/sites:ro
     - ./sites-available:/etc/nginx/sites-enabled:ro
     - ./log:/var/log
   command: nginx
