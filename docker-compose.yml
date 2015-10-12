@@ -1,10 +1,13 @@
+nginx:
+  build: .
+  dockerfile: Dockerfile.nginx-1.9.5
 web:
   build: .
   dockerfile: Dockerfile.production-nginx
   ports:
     - "80:80"
-  external_links:
-    - dockernoderuntime_nodeapp_1:nodeapp
+  # external_links:
+    # - dockernoderuntime_nodeapp_1:nodeapp
   volumes:
     - ./sites:/sites:ro
     - ./sites-available:/etc/nginx/sites-enabled:ro
