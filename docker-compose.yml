@@ -1,6 +1,3 @@
-nginx:
-  build: .
-  dockerfile: Dockerfile.nginx-1.9.5
 web:
   build: .
   dockerfile: Dockerfile.production-nginx
