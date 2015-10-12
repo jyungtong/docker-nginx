@@ -24,7 +24,7 @@ apk --update add gcc g++ make curl pcre pcre-dev zlib-dev openssl-dev linux-head
   cd /tmp/ && \
   curl -SLo- http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz | tar xz && \
   cd nginx-${NGINX_VERSION} && ./configure ${NGINX_FLAGS} && \
-  make && make install && \
+  make -j`grep -c ^processor /proc/cpuinfo` && make install && \
   addgroup nginx && adduser -D -H -Gnginx nginx && \
   apk del gcc g++ make curl pcre-dev zlib-dev openssl-dev linux-headers && \
   cd / && rm -rf /var/cache/apk/* /tmp/*
