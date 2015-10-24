@@ -1,0 +1,89 @@
+section.book {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+  section.book .container {
+    height: 100vh;
+    background-color: #F8F6F2; }
+  section.book .book-msg {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    width: 384px;
+    z-index: 10; }
+    section.book .book-msg p {
+      opacity: 0; }
+    section.book .book-msg #msg1 {
+      animation: textFadeIn 1s linear 0.6s;
+      -webkit-animation: textFadeIn 1s linear 0.6s;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards; }
+    section.book .book-msg #msg2 {
+      animation: textFadeIn 1s linear 0.9s;
+      -webkit-animation: textFadeIn 1s linear 0.9s;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards; }
+    section.book .book-msg #msg3 {
+      animation: textFadeIn 1s linear 1.2s;
+      -webkit-animation: textFadeIn 1s linear 1.2s;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards; }
+    section.book .book-msg #msg4 {
+      animation: textFadeIn 1s linear 1.5s;
+      -webkit-animation: textFadeIn 1s linear 1.5s;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards; }
+  section.book .bonsai-banana {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    height: 400px;
+    background-image: url("../img/bonsai-girl.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    transition: 1s; }
+  section.book .nav {
+    position: fixed;
+    bottom: 25px;
+    left: 0%;
+    float: right;
+    padding: 10px 20px;
+    z-index: 20; }
+    section.book .nav li {
+      display: inline-block;
+      padding: 0px 34px; }
+      section.book .nav li a {
+        color: #555;
+        text-decoration: none;
+        font-size: 14pt; }
+      section.book .nav li a:hover {
+        color: #888; }
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(5px); }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px); } }
+  @media screen and (max-width: 600px) {
+    section.book .nav {
+      width: 90%; }
+      section.book .nav li {
+        padding: 0 0;
+        text-align: center;
+        width: 22%; } }
+  @media screen and (max-width: 840px) {
+    section.book .book-msg {
+      top: 0;
+      left: 0;
+      width: 80%;
+      padding: 15px 50px; }
+    section.book .bonsai-banana {
+      opacity: 0.3; } }
+  @media screen and (max-height: 620px) {
+    section.book .container {
+      height: 700px; }
+    section.book .nav {
+      background-color: #F8F6F2; } }

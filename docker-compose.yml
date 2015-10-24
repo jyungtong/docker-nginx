@@ -3,8 +3,8 @@ web:
   dockerfile: Dockerfile.production-nginx
   ports:
     - "80:80"
-  # external_links:
-    # - dockernoderuntime_nodeapp_1:nodeapp
+  external_links:
+    - dockernoderuntime_rubicles.com-demo.api_1:rcdemoapi
   volumes:
     - ./sites:/sites:ro
     - ./sites-available:/etc/nginx/sites-enabled:ro

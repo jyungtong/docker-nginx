@@ -1,0 +1,97 @@
+section.blog-list {
+  position: relative;
+  width: 100%;
+  background-color: #F8F6F2; }
+  section.blog-list .navbar {
+    position: relative;
+    height: 46px;
+    padding: 7px 40px;
+    z-index: 20; }
+    section.blog-list .navbar h2 {
+      float: left;
+      color: #555; }
+    section.blog-list .navbar .nav {
+      margin: 0px;
+      float: right;
+      padding: 10px 20px; }
+      section.blog-list .navbar .nav li {
+        display: inline-block;
+        padding: 0px 34px; }
+        section.blog-list .navbar .nav li a {
+          color: #555;
+          text-decoration: none;
+          font-size: 14pt; }
+        section.blog-list .navbar .nav li a:hover {
+          color: #888; }
+  section.blog-list .reading-list {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 10; }
+    section.blog-list .reading-list h2 {
+      padding-top: 16px; }
+    section.blog-list .reading-list .post-tagLister, section.blog-list .reading-list .post-header, section.blog-list .reading-list .post-body, section.blog-list .reading-list .post-footer {
+      padding: 7px 0px; }
+    section.blog-list .reading-list .post-block {
+      padding: 5px;
+      border-top: 1px solid #ccc; }
+      section.blog-list .reading-list .post-block .post-tagLister span.post-tag {
+        margin: 0px 5px;
+        color: rgba(0, 0, 0, 0.5); }
+        section.blog-list .reading-list .post-block .post-tagLister span.post-tag .fa {
+          margin-right: 4px; }
+      section.blog-list .reading-list .post-block .post-header .post-inline-avatar {
+        display: inline-block; }
+        section.blog-list .reading-list .post-block .post-header .post-inline-avatar .avatar {
+          height: 36px;
+          width: 36px;
+          border-radius: 18px; }
+      section.blog-list .reading-list .post-block .post-header .post-inline-feed {
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: top; }
+        section.blog-list .reading-list .post-block .post-header .post-inline-feed .post-user, section.blog-list .reading-list .post-block .post-header .post-inline-feed .post-date {
+          position: relative;
+          top: 0;
+          display: block; }
+        section.blog-list .reading-list .post-block .post-header .post-inline-feed .post-user {
+          color: #930801;
+          height: 22px;
+          font-size: 10pt; }
+        section.blog-list .reading-list .post-block .post-header .post-inline-feed .post-date {
+          color: #aaa;
+          height: 14px;
+          font-size: 8pt; }
+      section.blog-list .reading-list .post-block .post-footer {
+        padding-bottom: 14px; }
+        section.blog-list .reading-list .post-block .post-footer a {
+          text-decoration: none;
+          color: #930801; }
+  section.blog-list .bonsai-banana {
+    position: fixed;
+    top: 150px;
+    right: 0;
+    width: 270px;
+    height: 400px;
+    background-image: url("../img/bonsai-girl.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    transition: 1s; }
+  @media screen and (max-width: 840px) {
+    section.blog-list .book-msg {
+      top: 0;
+      left: 0;
+      width: 80%;
+      padding: 15px 50px; }
+    section.blog-list .bonsai-banana {
+      opacity: 0.3; } }
+  @media screen and (max-width: 630px) {
+    section.blog-list .reading-list {
+      width: 90%; }
+    section.blog-list .navbar .nav {
+      width: 100%; }
+      section.blog-list .navbar .nav li {
+        padding: 0 0;
+        text-align: center;
+        width: 24%; } }
