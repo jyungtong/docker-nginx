@@ -1,6 +1,6 @@
 nginx:
   build: . 
-  dockerfile: Dockerfile.nginx-builder
+  dockerfile: Dockerfile.nginx
 
 rcdev-nginx:
   extends:
