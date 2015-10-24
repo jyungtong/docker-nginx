@@ -1,2 +1,0 @@
-FROM ttux/alpine-nginx-1.9.5
-MAINTAINER Tux Tong <huntthetux@gmail.com>

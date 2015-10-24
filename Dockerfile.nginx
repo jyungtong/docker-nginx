@@ -2,7 +2,6 @@ FROM alpine:edge
 MAINTAINER Tux Tong <huntthetux@gmail.com>
 
 COPY build-nginx.sh /tmp/
-RUN cd /tmp/ && chmod +x build-nginx.sh && \
-    ./build-nginx.sh
+RUN chmod +x build-nginx.sh && /tmp/build-nginx.sh
 
 ONBUILD COPY conf/ /etc/nginx/

@@ -1,10 +1,16 @@
-web:
-  build: .
-  dockerfile: Dockerfile.production-nginx
+nginx:
+  build: . 
+  dockerfile: Dockerfile.nginx-builder
+
+rcdev-nginx:
+  extends:
+    service: nginx
   ports:
     - "80:80"
+    - "443:443"
   external_links:
-    - dockernoderuntime_rubicles.com-demo.api_1:rcdemoapi
+    - dockernode_dev_blogapp_1:dev_blogapp
+    - dockernode_dev_authapp_1:dev_authapp
   volumes:
     - ./sites:/sites:ro
     - ./sites-available:/etc/nginx/sites-enabled:ro

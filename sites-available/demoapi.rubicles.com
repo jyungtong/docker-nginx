@@ -1,9 +1,9 @@
 upstream blog_app {
-  server dev_rubiclesblogapp:3301;
+  server dev_blogapp:3301;
 }
 
 upstream auth_app {
-  server dev_rubiclesauthapp:3302;
+  server dev_authapp:3302;
 }
 
 server {
