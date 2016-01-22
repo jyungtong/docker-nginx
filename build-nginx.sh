@@ -1,6 +1,6 @@
 #! /bin/sh
 
-export NGINX_VERSION=1.9.5
+export NGINX_VERSION=1.9.9
 export NGINX_FLAGS="--user=nginx      \
 --group=nginx                         \
 --prefix=/etc/nginx                   \
@@ -20,7 +20,7 @@ export NGINX_FLAGS="--user=nginx      \
 --without-http_uwsgi_module           \
 --without-http_fastcgi_module"
 
-apk --update add gcc g++ make curl pcre pcre-dev zlib-dev openssl-dev linux-headers && \
+apk --update --no-cache add gcc g++ make curl pcre pcre-dev zlib-dev openssl-dev linux-headers && \
   cd /tmp/ && \
   curl -SLo- http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz | tar xz && \
   cd nginx-${NGINX_VERSION} && ./configure ${NGINX_FLAGS} && \
